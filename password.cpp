@@ -25,7 +25,7 @@ int main() {
 	for(int y = 0; y < x; ++y) {
 
 	usleep(t*1000000);
-	std::cout << foo[rand()%46];
+	std::cout << foo[rand()%73];
 	
 	}	
 	
