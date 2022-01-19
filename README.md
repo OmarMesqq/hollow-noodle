@@ -1,5 +1,5 @@
 # HollowNoodle
-A fast and reliable password generator. No more using shady sites for generating your keys!
+A fast and reliable password generator
 
 # Important note on the entropy of passwords 
 
@@ -14,4 +14,4 @@ If you really want to keep your passphrases safe, remember to use two factor aut
 
 More reading on: https://en.wikipedia.org/wiki/Entropy_(information_theory) 
 
-Thank you (a lot!) for using my code. Feel free to contact me, fork the project or suggest anything :)
+Thank you for using my code!
