@@ -1,35 +1,27 @@
 #include <cstdlib>
-#include <ctime>
 #include <iostream>
-#include <unistd.h>
+#include <random>
+
 
 int main() {
-	
-	char foo[] = { 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9','!','"','@','?','$','&','%','_','#','*','^','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'}; 
-		
-	srand(time(NULL));
 
-	std::cout << "Hello! How long would you like your password to be?" << std::endl;
-	int x;
-	std::cin >> x;
+    char foo[] = { 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9','!','"','@','?','$','&','%','_','#','*','^','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
+    std::random_device rd;
+    srand(rd.operator()());
 
-	std::cout << "How long should the program wait (in seconds) before generating a new character of your password?" << std::endl;
-	int t;
-	std::cin >> t;
-	
+    std::cout << "Hello! How long would you like your password to be?" << std::endl;
+    int x;
+    std::cin >> x;
 
+    std::cout << "Your password is: " << std::endl;
 
-	std::cout << "Your password is: " << std::endl;	
+    for(int y = 0; y < x; ++y) {
 
-	for(int y = 0; y < x; ++y) {
+        std::cout << foo[random()%73];
 
-	usleep(t*1000000);
-	std::cout << foo[rand()%73];
-	
-	}	
-	
-	std::cout << "\n";
-
-
+    }
+    
+    std::cout << "\n";
+    
 }
