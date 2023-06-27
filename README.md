@@ -1,4 +1,4 @@
-<img src="https://github.com/OmarMesqq/hollow-noodle/assets/34662089/6fc9de58-163d-4ded-be7d-f899f55b3b96" width="300" height="auto">
+<img src="https://github.com/OmarMesqq/hollow-noodle/assets/34662089/f5588286-dcdc-4a11-bbf1-9129d4af3926" width="300" height="auto">
 
 # Hollow Noodle
 
