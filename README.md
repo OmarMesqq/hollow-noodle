@@ -2,7 +2,8 @@
 
 # Hollow Noodle
 
-CLI app that generates a robust pseudo-random password. It uses C++ STL's Mersenne Twister
-template and an array of 73 UTF-8 characters.
+CLI app that generates a robust, pseudo-random password. It uses [C++ STL's Mersenne Twister
+template](https://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine)
+and a string of 95 ASCII characters — so they work in any computer.
 
 Enjoy!
