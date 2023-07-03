@@ -13,7 +13,7 @@ void genPassword(int length) {
     for (int y = 0; y < length; ++y) {
 	    password += characters[dis(gen)];
     }
-    std::cout << password;
+    std::cout << password << std::endl;
 }
 
 
@@ -25,7 +25,7 @@ void interactive(int lastLength) {
 	        std::cout << "Length: ";
 	        int length;
         	std::cin >> length;
-	        std::cout << "\nYour password is: \n";
+	        std::cout << "\nYour password is: ";
 		genPassword(length);
 	
 		std::cout << "\nGenerate another password?\n";
@@ -37,7 +37,7 @@ void interactive(int lastLength) {
 			interactive(length);
 		}
 		else if (x == 'c') {
-			std::cout << "New length: \n";
+			std::cout << "New length: ";
 			int length;
 			std::cin >> length;
 			interactive(length);
