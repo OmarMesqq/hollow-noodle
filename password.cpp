@@ -3,10 +3,9 @@
 #include <random>
 
 void genPassword(int length) {
-        	
     std::string characters = "abcdefghijklmnopqrstuvwxyz0123456789!\"@?$&%_#*^ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    std::random_device rd;	// Gets a "random" device from OS - usually /dev/random on Linux
-    std::mt19937 gen(rd());	// Uses that device as seed for the Mersenne Twister PRNG object "gen" 
+    std::random_device rd;	// Gets a "random" device from OS 
+    std::mt19937 gen(rd());	// Uses that device as seed for the Mersenne Twister object 
     std::uniform_int_distribution<int> dis(0, characters.size() - 1); 
 
     std::string password;
@@ -18,7 +17,6 @@ void genPassword(int length) {
 
 
 void interactive(int lastLength) {
-
 	if (lastLength == 0) {
 
 		std::cout << "\nHow long would you like your password to be?\n";
@@ -45,7 +43,6 @@ void interactive(int lastLength) {
 		else {
 			return;	// 1st stop condition
 		}
-
 	}
 	else {
 		std::cout << "Your new password is: ";
@@ -71,7 +68,7 @@ void interactive(int lastLength) {
 	}
 }
 
-// Calls recursive function on start; exits when user says so
+
 int main() {
 	interactive(0);
 	return 0;
